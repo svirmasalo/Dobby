@@ -1,0 +1,36 @@
+{
+  "name": "dobby",
+  "version": "0.0.1",
+  "description": "humble and free wordpress starter optimized for my needs and methods. ",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svirmasalo/Dobby.git"
+  },
+  "keywords": [
+    "dobby",
+    "wordpress",
+    "starter",
+    "free"
+  ],
+  "author": "Tmi S.Virmasalo / Sampo Virmasalo",
+  "license": "GNU General Public License v2 or later",
+  "bugs": {
+    "url": "https://github.com/svirmasalo/Dobby/issues"
+  },
+  "homepage": "https://github.com/svirmasalo/Dobby#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

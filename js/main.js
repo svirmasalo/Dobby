@@ -1,0 +1,2 @@
+!function(o){console.log("main.js loaded"),o(".top").on("click",function(n){n.preventDefault(),o("body, html").animate({scrollTop:0},700)}),o('a[href^="#"]').on("click",function(n){n.preventDefault();var t=this.hash,e=o(t);o("html, body").stop().animate({scrollTop:e.offset().top},500,"swing",function(){window.location.hash=t})}),o(document).ready(function(){console.log("...and jquery working")})}(jQuery);
+//# sourceMappingURL=main.js.map
