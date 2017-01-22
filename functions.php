@@ -83,11 +83,14 @@ if ( getenv( 'WP_ENV' ) === 'development' && is_user_logged_in() ) {
  */
 function dobby_scripts() {
   // If you want to use a different CSS per view, you can set it up here
-  $dobby_template = 'styles';
+  $dobby_template = 'global';
 
-  wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/' . $dobby_template . '.min.css' );
+  wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/' . $dobby_template . '.css' );
+  wp_enqueue_style( 'font-awesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
   wp_enqueue_script( 'jquery-core' );
-  wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/main.js', array(), dobby_VERSION, true );
+  wp_enqueue_script( 'conditionizr', get_template_directory_uri() . '/js/vendors/conditionizr/dist/conditionizr.min.js', array(), dobby_VERSION, true );
+  wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/all.min.js', array(), dobby_VERSION, true );
+
 }
 add_action( 'wp_enqueue_scripts', 'dobby_scripts' );
 

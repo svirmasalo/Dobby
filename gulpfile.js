@@ -29,6 +29,7 @@ UGLIFY JAVASCRIPT -NOT WORKING PROPERLY-
 gulp.task('uglify',function(){
 	return gulp.src([jsSrc])
 		.pipe(sourcemaps.init())
+        .pipe(concat('all.min.js'))
 		.pipe(uglify({preserveComments: false, compress: true, mangle: true}).on('error',function(e){console.log('\x07',e.message);return this.end();}))
 		//.pipe(rename({ extname: '.min.js' }))
 		.pipe(sourcemaps.write('.'))
