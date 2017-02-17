@@ -1,3 +1,5 @@
+![alt text][logo]
+[logo]: https://github.com/svirmasalo/Dobby/blob/master/images/dobby-logo.png "I'm Dobby."
 # I am Dobby
 Helpful and free house-elf
 
