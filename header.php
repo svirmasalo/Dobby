@@ -45,7 +45,7 @@
 	<?php 
 		$navArgs = [
 			'menu_class' => 'menu',
-			'container' => '',
+			'container' => 'nav',
 		];
 		wp_nav_menu($navArgs);
 	?>

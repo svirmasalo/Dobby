@@ -2,11 +2,7 @@
 <?php get_header();?>
 
 <main>
-	<article>
-		<?php 
-			the_content();
-		?>
-	</article>
+	<?php get_template_part('template-parts/content','frontpage');?>
 </main>
 
 <?php get_footer();?>

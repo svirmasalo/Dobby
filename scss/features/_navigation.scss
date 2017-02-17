@@ -1,0 +1,12 @@
+nav{
+	#menu-paavalikko{
+	}
+	.menu-item{
+		display: inline;
+	}
+	.menu-item.menu-item-has-children{
+		ul{
+			display: none;
+		}		
+	}
+}
