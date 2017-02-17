@@ -27,4 +27,5 @@
 	$(document).ready(function(){
 		console.log("...and jquery working");
 	});
+
 } )( jQuery );

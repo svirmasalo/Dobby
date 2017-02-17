@@ -26,3 +26,11 @@ Helpful and free house-elf
 - Node
 - NPM
 - Gulp
+
+## All the vendors I use
+- Conditionizr
+- ScrollMagic
+- Wordpress-social-share
+- FontAwesome
+- Normalize.css
+- Reset.css
