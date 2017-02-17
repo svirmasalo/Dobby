@@ -41,3 +41,12 @@
 	</script>
 </head>
 <body <?php body_class();?> >
+<header class="site-header">
+	<?php 
+		$navArgs = [
+			'menu_class' => 'menu',
+			'container' => '',
+		];
+		wp_nav_menu($navArgs);
+	?>
+</header>

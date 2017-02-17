@@ -1,7 +1,6 @@
 /*Main js file*/
 ( function( $ ) {
-	console.log("main.js loaded");
-
+	console.log("Dobby main .js-file loaded");
     // Smooth scroll to top
     $('.top').on('click', function(event){
       event.preventDefault();
@@ -28,5 +27,4 @@
 	$(document).ready(function(){
 		console.log("...and jquery working");
 	});
-
 } )( jQuery );

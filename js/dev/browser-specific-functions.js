@@ -1,5 +1,5 @@
 console.log("conditionals added");
-conditionizr.add('firefox', function () {
+/*conditionizr.add('firefox', function () {
   return 'InstallTrigger' in window;
 });
 var basepath = window.location;
@@ -11,4 +11,4 @@ conditionizr.config({
         safari: ['script']
 
     }
-});
+});*/

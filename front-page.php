@@ -2,7 +2,11 @@
 <?php get_header();?>
 
 <main>
-	<h1>Etusivu</h1>
+	<article>
+		<?php 
+			the_content();
+		?>
+	</article>
 </main>
 
 <?php get_footer();?>

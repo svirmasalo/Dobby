@@ -1,11 +1,12 @@
 @charset 'UTF-8';
 
 // Theme options
+@import 'reset';
+//@import 'normalize';
 @import 'config';
-
 
 // Global features
 @import '../features/map';
 
 // Views
-
+@import '../views/page-default';

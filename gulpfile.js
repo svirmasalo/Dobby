@@ -1,38 +1,60 @@
 /*JS VARIABLES*/
-var gulp = require('gulp');
-var sourcemaps = require('gulp-sourcemaps');
-var uglify      = require('gulp-uglify');
-var rename = require('gulp-rename');
+const gulp = require('gulp');
+const sourcemaps = require('gulp-sourcemaps');
+const uglify      = require('gulp-uglify');
+const rename = require('gulp-rename');
+const babel = require('gulp-babel');
 
 /*STYLE VARIABLES*/
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var minifycss = require('gulp-clean-css');
-var concat = require('gulp-concat');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const minifycss = require('gulp-clean-css');
+const concat = require('gulp-concat');
 
 /* PATH VARIABLES */
 
 //JS
-var jsSrc = 'js/dev/*.js';
-var jsDist = 'js';
+const jsSrc = 'js/dev/*.js';
+//const lba = 'js/dev/Lightbox-anything/lightboxAnything.js';
+const wpss = 'js/Vendors/wordpress-social-share/wpss.legacy.js';
+const scrollMagicJS = 'js/Vendors/scrollmagic/ScrollMagic.min.js';
+const jsDist = 'js';
 
 //STYLES
-var scssSrc = 'scss/**/*.{scss,sass}';
-var scssGlobalSrc = 'scss/config/globa.scss';
-var cssDist = 'css';
+const scssSrc = 'scss/**/*.{scss,sass}';
+const scssGlobalSrc = 'scss/base/global.scss';
+const cssDist = 'css/';
 
 /*
 UGLIFY JAVASCRIPT -NOT WORKING PROPERLY-
 ========================================
 */
 
+gulp.task('scripts',()=>{
+    return gulp.src([jsSrc,wpss])
+        .pipe(sourcemaps.init())
+        .pipe(concat('theme-scripts.js'))
+        .pipe(babel({
+            presets:['es2015']
+        }))
+        .pipe(gulp.dest(jsDist)) //For debugging purposes
+        .pipe(uglify({preserveComments: true, compress: true, mangle: true}).on('error',function(e){console.log('\x07',e.message);return this.end();}))
+        .pipe(rename({ extname: '.legacy.min.js' }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(jsDist));
+});
+gulp.task('appendVendors',()=>{
+    return gulp.src([scrollMagicJS])
+        .pipe(sourcemaps.init())
+        .pipe(concat('theme-scripts.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(jsDist));
+});
+
 gulp.task('uglify',function(){
-	return gulp.src([jsSrc])
-		.pipe(sourcemaps.init())
-        .pipe(concat('all.min.js'))
+	return gulp.src(['js/theme-scripts.js'])
 		.pipe(uglify({preserveComments: false, compress: true, mangle: true}).on('error',function(e){console.log('\x07',e.message);return this.end();}))
-		//.pipe(rename({ extname: '.min.js' }))
-		.pipe(sourcemaps.write('.'))
+		.pipe(rename({ extname: '.legacy.min.js' }))
 		.pipe(gulp.dest(jsDist));
 });
 
@@ -40,9 +62,9 @@ gulp.task('uglify',function(){
 PREFIX. CONCAT AND MINIFY STYLES
 ================================
 */
-
+/*
 gulp.task('styles', () =>
-    gulp.src(scssGlobalSrc)
+    gulp.src(scssSrc)
         .pipe(sourcemaps.init())
         .pipe(sass().on('error',sass.logError))
 		.pipe(autoprefixer('last 3 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) // Adds browser prefixes (eg. -webkit, -moz, etc.)
@@ -53,15 +75,31 @@ gulp.task('styles', () =>
         }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(cssDist))
+);*/
+
+gulp.task('styles', () =>
+    gulp.src(scssGlobalSrc)
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error',sass.logError))
+        .pipe(autoprefixer('last 4 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) // Adds browser prefixes (eg. -webkit, -moz, etc.)
+        //.pipe(concat('styles.min.css'))
+        .pipe(minifycss({compatibility: 'ie8'},{debug:true}, function(details) {
+            console.log(details.name + ': ' + details.stats.originalSize);
+            console.log(details.name + ': ' + details.stats.minifiedSize);
+        }))
+        .pipe(rename({extname:'.min.css'}))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(cssDist))
 );
+
 
 /*
 WATCH
 =====
 */
-gulp.task('js-watch', ['uglify']);
+gulp.task('js-watch', ['scripts']);
 gulp.task('watch', function() {
-
+  
   gulp.watch(scssSrc, ['styles']);
   gulp.watch(jsSrc, ['js-watch']);
 
