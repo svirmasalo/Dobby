@@ -21,6 +21,7 @@ const vendor_scrollMagicJS = 'js/Vendors/scrollmagic/ScrollMagic.min.js';
 const vendor_conditionizr = 'js/Vendors/conditionizr/dist/conditionizr.min.js';
 const vendor_slick = 'js/Vendors/slick/slick/slick.min.js';
 const vendorStyle_slick = 'js/Vendors/slick/slick/slick.css';
+const vendorStyle_slickTheme = 'js/Vendors/slick/slick/slick-theme.css';
 const jsDist = 'js';
 const vendor_jsDist = 'js/Vendors';
 
@@ -48,7 +49,7 @@ gulp.task('scripts',()=>{
         .pipe(gulp.dest(jsDist));
 });
 gulp.task('vendorScripts',()=>{
-    return gulp.src([vendor_wpss, vendor_scrollMagicJS, vendor_conditionizr])
+    return gulp.src([vendor_wpss, vendor_scrollMagicJS, vendor_conditionizr,vendor_slick])
         .pipe(sourcemaps.init())
         .pipe(concat('theme-vendors.js'))
         .pipe(gulp.dest(vendor_jsDist)) //For debugging purposes
@@ -74,7 +75,7 @@ gulp.task('styles', () =>
 );
 
 gulp.task('vendorStyles', () =>
-    gulp.src([vendorStyle_slick])
+    gulp.src([vendorStyle_slick, vendorStyle_slickTheme])
         .pipe(sourcemaps.init())
         .pipe(concat('vendorStyles.css'))
         .pipe(autoprefixer('last 4 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) // Adds browser prefixes (eg. -webkit, -moz, etc.)
