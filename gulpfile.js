@@ -19,6 +19,8 @@ const jsSrc = 'js/dev/*.js';
 const vendor_wpss = 'js/Vendors/wordpress-social-share/wpss.legacy.js';
 const vendor_scrollMagicJS = 'js/Vendors/scrollmagic/ScrollMagic.min.js';
 const vendor_conditionizr = 'js/Vendors/conditionizr/dist/conditionizr.min.js';
+const vendor_slick = 'js/Vendors/slick/slick/slick.min.js';
+const vendorStyle_slick = 'js/Vendors/slick/slick/slick.css';
 const jsDist = 'js';
 const vendor_jsDist = 'js/Vendors';
 
@@ -71,6 +73,21 @@ gulp.task('styles', () =>
         .pipe(gulp.dest(cssDist))
 );
 
+gulp.task('vendorStyles', () =>
+    gulp.src([vendorStyle_slick])
+        .pipe(sourcemaps.init())
+        .pipe(concat('vendorStyles.css'))
+        .pipe(autoprefixer('last 4 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) // Adds browser prefixes (eg. -webkit, -moz, etc.)
+        //.pipe(concat('styles.min.css'))
+        .pipe(minifycss({compatibility: 'ie8'},{debug:true}, function(details) {
+            console.log(details.name + ': ' + details.stats.originalSize);
+            console.log(details.name + ': ' + details.stats.minifiedSize);
+        }))
+        .pipe(rename({extname:'.min.css'}))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(cssDist))
+);
+
 
 /*
 WATCH
@@ -79,7 +96,7 @@ WATCH
 gulp.task('js-watch', ['scripts','vendorScripts']);
 gulp.task('watch', function() {
   
-  gulp.watch(scssSrc, ['styles']);
+  gulp.watch(scssSrc, ['styles','vendorStyles']);
   gulp.watch(jsSrc, ['js-watch']);
 
 });

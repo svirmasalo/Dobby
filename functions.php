@@ -86,6 +86,7 @@ function dobby_scripts() {
   $dobby_template = 'global';
 
   wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/' . $dobby_template . '.min.css' );
+  wp_enqueue_style( 'vendor-styles', get_template_directory_uri() . '/css/vendorStyles.min.css' );
   wp_enqueue_style( 'font-awesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
   wp_enqueue_script( 'jquery-core' );
   wp_enqueue_script( 'vendor-scripts', get_template_directory_uri() . '/js/Vendors/theme-vendors.min.js', array(), dobby_VERSION, true );

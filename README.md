@@ -22,6 +22,7 @@ Helpful and free house-elf
 - Extra CPT called Modules
 - [Conditionizr](http://conditionizr.com/)
 - [FontAwesome](http://fontawesome.io/)
+- [SlickSlider](http://kenwheeler.github.io/slick/)
 - etc...
 
 ## Requirements
@@ -36,3 +37,8 @@ Helpful and free house-elf
 - FontAwesome
 - Normalize.css
 - Reset.css
+- Slick
+
+### Notes
+- All the vendor scripts are concatted into one file and included from functions.php
+- All the vendor styles are concatted into one file and included from functions.php

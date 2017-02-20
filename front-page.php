@@ -1,7 +1,7 @@
 <?php // template name: frontpage ?>
 <?php get_header();?>
 
-<main>
+<main role="main">
 	<?php get_template_part('template-parts/content','frontpage');?>
 </main>
 

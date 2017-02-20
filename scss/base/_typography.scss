@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Vaani');
+$font-base: 'Mukta Vaani', sans-serif;
+$font-headings: 'Mukta Vaani', sans-serif;
+html{
+	font-family: $font-base;
+	font-size: 16px;
+	/*
+	@media screen and (min-width: xxxx){
+		font-size: xxx;
+	}
+	*/
+	*{
+		line-height: 1.2;
+	}
+}
+	
+

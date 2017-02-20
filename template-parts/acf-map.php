@@ -137,7 +137,7 @@
 	</script>
 
 	<?php 
-		$location = get_field('sijainti',41);
+		$location = '<Field_here>';
 		
 	?>
 	<div class="acf-map">

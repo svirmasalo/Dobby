@@ -1,3 +1,16 @@
 main{
 	padding:1em;
 }
+@mixin frowEqualHeight($justify){
+	display:flex;
+	flex-flow:row;
+	justify-content: $justify;
+	align-items:stretch;
+}
+@mixin frowContentCentered($justify){
+	display:flex;
+	flex-flow:row;
+	justify-content: $justify;
+	align-items:center;
+}
+
