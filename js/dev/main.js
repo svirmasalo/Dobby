@@ -25,7 +25,15 @@
     });
 	
 	$(document).ready(function(){
-		console.log("...and jquery working");
+		
+        /**
+        * Mobile navgation
+        */
+        $('#nav-toggle').on('click',function(e){
+            $(this).toggleClass('nav-toggled');
+            $('nav').toggleClass('open');
+        });
+
 	});
 
 } )( jQuery );

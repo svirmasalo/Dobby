@@ -1,12 +1,66 @@
+
+#nav-toggle{
+	padding:0;
+	width:50px;
+	height: 50px;
+	.bar{
+		width:80%;
+		height: 3px;
+		background: black;
+		display: block;
+		margin:3px auto;	
+	}
+}
 nav{
+
+
+	transition: all 248ms linear;
+
+	position:fixed;
+	display:block;
+	overflow:hidden;
+
+	background:darken(#333, 5%);
+
+	top:55px;
+	left:0;
+	right:0;
+	bottom:100%;
+
+	width:100%;
+	height:0;
+
+	z-index:98;
+	
+	
+	&.open{
+		height: 100vh;
+	}
+
 	#menu-paavalikko{
+		display: flex;
+		flex-flow:column;
+		justify-content: center;
+		align-items:flex-start;
+		align-content:center;
 	}
 	.menu-item{
 		display: inline;
+		margin-right:1rem;
+		margin-top:1rem;
 	}
 	.menu-item.menu-item-has-children{
 		ul{
 			display: none;
 		}		
+	}
+
+}
+@media screen and (min-width:$navBreakPoint){
+	#nav-toggle{
+		//display: none;
+	}
+	nav{
+		//display: inline-block;
 	}
 }

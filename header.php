@@ -42,6 +42,15 @@
 </head>
 <body <?php body_class();?> >
 <header class="site-header">
+	<a id="logo" href="#">
+		<img  src="<?php echo get_template_directory_uri(); ?>/images/favicons/apple-touch-icon.png">
+	</a>
+	<button id="nav-toggle">
+		<span class="screen-reader"><?php _e('Valikko','dobby');?></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+	</button>
 	<?php 
 		$navArgs = [
 			'menu_class' => 'menu',

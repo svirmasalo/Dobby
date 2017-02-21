@@ -1,0 +1,30 @@
+*[role="banner"]{
+	width:100%;
+	overflow-x:hidden;
+	position:relative;
+
+	/**
+	* For demo purposes
+	*/ 
+
+	display:flex;
+	flex-flow:row;
+	justify-content:flex-start;
+	align-items:center;
+
+	.hero-container{
+		color:white;
+		padding:1rem;
+		font-size:3rem;
+	}
+
+	/******************/
+
+	&.hero.static{
+		background-color: #333;
+		height: calc(100vw / 1.763);
+	}
+	&.hero.video{
+
+	}
+}

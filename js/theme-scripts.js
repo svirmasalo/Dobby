@@ -4,40 +4,47 @@ console.log("conditionals added");
 
 /*Main js file*/
 (function ($) {
-  console.log("Dobby main .js-file loaded");
-  // Smooth scroll to top
-  $('.top').on('click', function (event) {
-    event.preventDefault();
-    $('body, html').animate({
-      scrollTop: 0
-    }, 700);
-  });
-
-  // Smooth scroll to ID on any anchor link
-  $('a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
-
-    var target = this.hash;
-    var $target = $(target);
-
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top
-    }, 500, 'swing', function () {
-      window.location.hash = target;
+    console.log("Dobby main .js-file loaded");
+    // Smooth scroll to top
+    $('.top').on('click', function (event) {
+        event.preventDefault();
+        $('body, html').animate({
+            scrollTop: 0
+        }, 700);
     });
-  });
 
-  $(document).ready(function () {
-    console.log("...and jquery working");
-  });
+    // Smooth scroll to ID on any anchor link
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+
+    $(document).ready(function () {
+
+        /**
+        * Mobile navgation
+        */
+        $('#nav-toggle').on('click', function (e) {
+            $(this).toggleClass('nav-toggled');
+            $('nav').toggleClass('open');
+        });
+    });
 })(jQuery);
 jQuery(function () {
-  console.log("slick loaded");
-  jQuery('#slick .article-body').slick({
-    accessibility: true,
-    centerMode: true,
-    centerPadding: '1rem',
-    slidesToShow: 3,
-    slide: '.slide'
-  });
+    console.log("slick loaded");
+    jQuery('#slick .article-body').slick({
+        accessibility: true,
+        centerMode: true,
+        centerPadding: '1rem',
+        slidesToShow: 3,
+        slide: '.slide'
+    });
 });
