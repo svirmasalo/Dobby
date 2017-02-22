@@ -4,408 +4,120 @@
 		"selected_items":
 		[
 			[
-				"lig",
-				"lightBoxAnyContent"
+				"tran",
+				"translateX"
 			],
 			[
-				"lgi",
-				"lightBoxAnyContent"
-			],
-			[
-				"form",
-				"formModuuliId"
-			],
-			[
-				"clos",
-				"closeButtonText"
-			],
-			[
-				"close",
-				"closeButtonAttributes"
-			],
-			[
-				"clso",
-				"closeButtonAttributes"
-			],
-			[
-				"append",
-				"appendTo"
-			],
-			[
-				"light",
-				"lightBox"
-			],
-			[
-				"lightBox",
-				"lightBoxStyles"
-			],
-			[
-				"con",
-				"conditionizr"
-			],
-			[
-				"ca",
-				"category"
-			],
-			[
-				"cat",
-				"category"
-			],
-			[
-				"cate",
-				"categoryLink"
-			],
-			[
-				"article",
-				"article"
-			],
-			[
-				"fle",
-				"flex-wrap"
-			],
-			[
-				"padding",
-				"padding"
-			],
-			[
-				"color-",
-				"color-light-a"
-			],
-			[
-				"arti",
-				"article"
-			],
-			[
-				"u",
-				"underline"
-			],
-			[
-				"imp",
-				"important"
-			],
-			[
-				"hero",
-				"hero-content-wrap"
-			],
-			[
-				"dis",
-				"display"
-			],
-			[
-				"bac",
-				"background-color"
-			],
-			[
-				"ove",
-				"overflow-x"
-			],
-			[
-				"margin",
-				"margin-bottom"
-			],
-			[
-				"hei",
-				"height"
-			],
-			[
-				"rig",
-				"right"
-			],
-			[
-				"back",
-				"background-size"
-			],
-			[
-				"style",
-				"styleString"
-			],
-			[
-				"flex",
-				"flex-start"
-			],
-			[
-				"min-",
-				"min-width"
-			],
-			[
-				"tie",
-				"tiedostonPolku"
-			],
-			[
-				"tied",
-				"tiedostonNimi"
-			],
-			[
-				"ali",
-				"align-items"
-			],
-			[
-				"min",
-				"min-height"
-			],
-			[
-				"font",
-				"font-family"
-			],
-			[
-				"init",
-				"initVideoLightbox"
-			],
-			[
-				"video",
-				"videoToggle"
-			],
-			[
-				"clo",
-				"closeLightbox"
-			],
-			[
-				"w",
-				"width"
-			],
-			[
-				"If",
-				"iframeAttributes"
-			],
-			[
-				"if",
-				"iframeStyles"
-			],
-			[
-				"ini",
-				"initVideoPlayer"
-			],
-			[
-				"li",
-				"lightBoxStyles"
-			],
-			[
-				"i",
-				"iframeAttributes"
-			],
-			[
-				"ifra",
-				"iframeAttributes"
-			],
-			[
-				"vide",
-				"videoUrl"
-			],
-			[
-				"iso-",
-				"iso-lohko"
-			],
-			[
-				"alig",
-				"align-content"
-			],
-			[
-				"trans",
+				"tra",
 				"transform"
 			],
 			[
-				"ba",
-				"background-color"
-			],
-			[
-				"bakc",
-				"background-position"
-			],
-			[
-				"paddin",
-				"padding"
-			],
-			[
-				"te",
-				"tekstinSavy"
-			],
-			[
-				"wrap",
-				"wrapLangsToLi"
-			],
-			[
-				"lgoo",
-				"logoSrc"
-			],
-			[
-				"or",
-				"order"
-			],
-			[
-				"logo",
-				"logoSrc"
-			],
-			[
-				"items",
-				"items_list"
-			],
-			[
-				"item",
-				"itemList"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"font-",
-				"font-family"
-			],
-			[
-				"anima",
-				"animation-direction"
-			],
-			[
-				"ani",
-				"animateNavOpening"
-			],
-			[
-				"padd",
-				"padding"
-			],
-			[
-				"pad",
-				"padding"
-			],
-			[
-				"mmm",
-				"mmmNo"
-			],
-			[
-				"tausta",
-				"taustakuva"
-			],
-			[
-				"taustakuva",
-				"taustakuva_tyyli"
-			],
-			[
-				"tii",
-				"tiiviin_alueen_taustavari"
-			],
-			[
-				"the_",
-				"the_sub_field"
-			],
-			[
-				"text-",
-				"text-decoration"
-			],
-			[
-				"no",
-				"no-repeat"
-			],
-			[
-				"backr",
-				"background-size"
-			],
-			[
-				"s",
-				"signature"
-			],
-			[
-				"al",
-				"align-items"
-			],
-			[
-				"max-",
-				"max-width"
-			],
-			[
-				"marg",
-				"margin-bottom"
-			],
-			[
-				"blog",
-				"blogdesc"
-			],
-			[
-				"a",
-				"auto"
-			],
-			[
-				"over",
-				"overflow-y"
+				"ab",
+				"absolute"
 			],
 			[
 				"pos",
 				"position"
 			],
 			[
-				"win",
-				"winWidth"
-			],
-			[
 				"in",
-				"include"
-			],
-			[
-				"site",
-				"site-nav"
-			],
-			[
-				"inline",
 				"inline-block"
 			],
 			[
-				"is_ar",
-				"is_archive"
+				"nav",
+				"nav-toggle"
 			],
 			[
-				"print",
-				"print_r"
-			],
-			[
-				"o",
-				"open"
-			],
-			[
-				"tran",
-				"translateX"
-			],
-			[
-				"op",
-				"opacity"
-			],
-			[
-				"di",
-				"display"
+				"ce",
+				"center"
 			],
 			[
 				"wid",
 				"width"
 			],
 			[
-				"wat",
-				"watch-all"
+				"appl",
+				"apple-touch-icon"
 			],
 			[
-				"sc",
-				"scssSrc"
+				"ven",
+				"vendor_slick"
 			],
 			[
-				"fu",
-				"function"
+				"vendorStyle_",
+				"vendorStyle_slickTheme"
 			],
 			[
-				"brow",
-				"browserSync"
+				"vendo",
+				"vendorStyles"
 			],
 			[
-				"word",
-				"wordpress"
+				"con",
+				"concat"
+			],
+			[
+				"includ",
+				"include\t@include"
+			],
+			[
+				"rela",
+				"relativeNav"
+			],
+			[
+				"arti",
+				"article"
+			],
+			[
+				"col",
+				"column"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/usr/share/nginx/html/snippets/Lightbox-anything/demo/index.html",
+			"file": "header.php",
 			"settings":
 			{
-				"buffer_size": 574,
+				"buffer_size": 2451,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/views/_page-default.scss",
+			"settings":
+			{
+				"buffer_size": 566,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/features/_navigation.scss",
+			"settings":
+			{
+				"buffer_size": 431,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/dev/main.js",
+			"settings":
+			{
+				"buffer_size": 908,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/base/_config.scss",
+			"settings":
+			{
+				"buffer_size": 650,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -417,35 +129,43 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "packa",
+		"last_filter": "snippet ",
 		"selected_items":
 		[
 			[
-				"packa",
+				"snippet ",
+				"Snippet: jQuery ready function"
+			],
+			[
+				"insta",
 				"Package Control: Install Package"
 			],
 			[
 				"package",
-				"Package Control: List Packages"
+				"Package Control: Discover Packages"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"snipp jq",
+				"Snippet: jQuery ready function"
 			],
 			[
 				"syntax s",
 				"Set Syntax: Sass"
 			],
 			[
-				"intall packa",
+				"pacak",
 				"Package Control: Install Package"
-			],
-			[
-				"synta css",
-				"Set Syntax: CSS"
-			],
-			[
-				"sy she",
-				"Set Syntax: Shell Script (Bash)"
 			]
 		],
-		"width": 485.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -465,90 +185,79 @@
 	},
 	"expanded_folders":
 	[
-		"/home/sampo/Desktop/html/Dobby",
-		"/home/sampo/Desktop/html/Dobby/js",
-		"/home/sampo/Desktop/html/Dobby/js/dev",
-		"/home/sampo/Desktop/html/Dobby/scss",
-		"/home/sampo/Desktop/html/Dobby/scss/base",
-		"/home/sampo/Desktop/html/Dobby/scss/features",
-		"/home/sampo/Desktop/html/Dobby/template-parts"
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/css",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/js",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/js/dev",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/base",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/features",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/views",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/template-parts"
 	],
 	"file_history":
 	[
-		"/home/sampo/Desktop/html/Dobby/gulpfile.js",
-		"/home/sampo/Desktop/html/Dobby/functions.php",
-		"/home/sampo/Desktop/html/Dobby/js/dev/browser-specific-functions.js",
-		"/home/sampo/Desktop/html/Dobby/js/dev/lightboxAnything.js",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/js/conditionals/firefox.js",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/footer.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/js/dev/main.js",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/js/dev/browser-conditional-settings.js",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/template-parts/content-single.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/base/_typography.scss",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/views/_blog.scss",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/template-parts/content-archive.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/template-parts/hero.php",
-		"/home/sampo/Dropbox/tyot/nemoy/ser.txt",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/views/_page.scss",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/base/_structure.scss",
-		"/home/sampo/Dropbox/tyot/lbanything.js",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/functions.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/gulpfile.js",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/js/dev/safari-navigation.js",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/js/Vendor/conditionizr.min.js",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/js/conditionals.js",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/base/_config.scss",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/header.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/template-parts/content-frontpage.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/template-parts/section-tiivis.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/template-parts/content-nemoy-mediassa.php",
-		"/home/sampo/wordpress-tietokanta.sql",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/index.php",
-		"/usr/share/nginx/html/belgierkkari.com/wp-content/themes/Dobby/help",
-		"/home/sampo/Dropbox/tyot/nemoy/svirmasa.txt",
-		"/home/sampo/Dropbox/tyot/nemoy/svirmasa",
-		"/home/sampo/Dropbox/tyot/Belgierkkari/varit.txt",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/page.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/template-parts/content-page.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/archive.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/404.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/features/_forms.scss",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/template-parts/acf-map.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/base/global.scss",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/features/_map.scss",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/views/_frontpage.scss",
-		"/home/sampo/Dropbox/tyot/nemoy/neurofeedback-sisallot.txt",
-		"/home/sampo/Desktop/acf-hero.json",
-		"/tmp/mozilla_sampo0/acf-export-2016-12-22.json",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/views/_footer.scss",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/front-page.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/template-parts/section-valja.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/js/main.js",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/single.php",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/package.json",
-		"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss/base/_reset.scss",
-		"/etc/nginx/conf.d/default.conf",
-		"/etc/nginx/sites-available/demowp.dev",
-		"/etc/ssh/ssh_config",
-		"/etc/ssh/sshd_config",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/template-parts/content-frontpage.php",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/front-page.php",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/features/_hero.scss",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/js/dev/main.js",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/base/_config.scss",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/features/_navigation.scss",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/header.php",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/gulpfile.js",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/views/_page-default.scss",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/README.md",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/functions.php",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/js/dev/slick-functions.js",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/base/global.scss",
+		"/home/sampo/.bashrc",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/footer.php",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/template-parts/acf-map.php",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/base/_reset.scss",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/base/_typography.scss",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/archive.php",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/template-parts/content-archive.php",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/package.json",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/js/dev/browser-specific-functions.js",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/style.css",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/scss/base/_normalize.scss",
+		"/usr/share/nginx/html/Dobby/wp-content/themes/Dobby/js/Vendors/readme.txt",
+		"/home/sampo/Desktop/default.conf",
+		"/usr/share/nginx/html/Dobby/wp-config.php",
+		"/usr/share/nginx/html/lvipirttinen.fi/wp-config.php",
+		"/usr/share/nginx/html/infobuild.fi/wp-config.php",
+		"/usr/share/nginx/html/svirmasalo.fi/wp-config.php",
+		"/usr/share/nginx/html/lvipirttinen.fi/wp-config",
+		"/usr/share/nginx/html/wordpress/wp-config.php",
+		"/usr/share/nginx/html/svirmasalo.fi/wp-content/themes/svirmasalo.fi/front-page.php",
+		"/usr/share/nginx/html/svirmasalo.fi/wp-content/themes/svirmasalo.fi/scss/views/_frontpage.scss",
+		"/usr/share/nginx/html/svirmasalo.fi/wp-content/themes/svirmasalo.fi/js/dev/slick-functions.js",
+		"/usr/share/nginx/html/svirmasalo.fi/wp-content/themes/svirmasalo.fi/js/dev/scrollMagic-functions.js",
+		"/usr/share/nginx/html/svirmasalo.fi/wp-content/themes/svirmasalo.fi/functions.php",
+		"/usr/share/nginx/conf.d/default.conf",
+		"/home/sampo/Desktop/html/svirmasalo.fi/wp-config.php",
+		"/etc/nginx/nginx.conf",
+		"/etc/php/7.0/fpm/php.ini",
+		"/usr/share/nginx/html/svirmasalo.fi/wp-content/themes/svirmasalo.fi/package.json",
+		"/etc/group",
+		"/home/sampo/Desktop/html/svirmasalo.fi/wp-content/themes/svirmasalo.fi/svirmasa_nnrpnzkO(2).sql",
+		"/home/sampo/Dropbox/tyot/conf/nginx.conf",
 		"/etc/nginx/sites-available/default",
-		"/etc/nginx/sites-available/wordpress",
-		"/home/sampo/Desktop/html/wordpress/wp-config.php",
-		"/home/sampo/Desktop/html/index.html",
-		"/home/sampo/Desktop/html/test/index.html",
-		"/home/sampo/Desktop/html/wordpress/wp-config-sample.php",
-		"/home/sampo/Desktop/html/react-template/gulpfile.js"
+		"/usr/share/nginx/html/info.php",
+		"/etc/nginx/sites-enabled/default",
+		"/etc/nginx/conf.d/default.conf",
+		"/home/sampo/Dropbox/tyot/conf/default.conf",
+		"/home/sampo/Dropbox/tyot/conf/default.save"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
-			"/home/sampo/Desktop/html/nemoy/wp-content/themes/Dobby/scss"
 		]
 	},
 	"find_state":
@@ -556,21 +265,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"let",
-			"const",
-			"http://svirmasalo.dev/nemoy",
-			"nemwp2016_",
-			"nostettu",
-			"article.page-content",
-			"text-shadow",
-			"color:",
-			"){\n",
-			"get_row_layout",
-			"tiivis",
-			"valja",
-			"em",
-			"header-height",
-			"deny"
+			"$",
+			"hero",
+			"hero[0]",
+			"8M",
+			"filesize",
+			"2M",
+			"max_size"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -578,13 +279,7 @@
 		"regex": false,
 		"replace_history":
 		[
-			"https://nemoy.seravo.fi",
-			"wp_",
-			"div.page-content",
-			"valja",
-			"tiivis",
-			"rem",
-			"static-header-height"
+			"jQuery"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -592,55 +287,156 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"folders":
-	[
-		{
-			"path": "/home/sampo/Desktop/html/Dobby"
-		}
-	],
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/usr/share/nginx/html/snippets/Lightbox-anything/demo/index.html",
+					"file": "header.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 574,
+						"buffer_size": 2451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								381,
-								381
+								2212,
+								2212
 							]
 						],
 						"settings":
 						{
-							"auto_complete_triggers":
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scss/views/_page-default.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 566,
+						"regions":
+						{
+						},
+						"selection":
+						[
 							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scss/features/_navigation.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/dev/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								849,
+								849
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/base/_config.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								515,
+								515
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -677,16 +473,12 @@
 		]
 	},
 	"menu_visible": true,
-	"output.CSS Extended Completions":
-	{
-		"height": 0.0
-	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "",
+	"project": "dobby.sublime-project",
 	"replace":
 	{
 		"height": 62.0
@@ -703,12 +495,12 @@
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 380.0
+		"width": 0.0
 	},
 	"select_symbol":
 	{
@@ -727,7 +519,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 209.0,
+	"side_bar_width": 287.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

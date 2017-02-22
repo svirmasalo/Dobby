@@ -27,15 +27,32 @@ console.log("conditionals added");
         });
     });
 
-    $(document).ready(function () {
+    function navState() {
+        return $('nav').hasClass("mobile");
+    }
 
+    function navStateChange(winWidth) {
+        if (winWidth <= 768 && navState() === false) {
+            $('nav').addClass('mobile');
+        } else if (winWidth > 768 && navState() === true) {
+            $('nav').removeClass('mobile');
+        }
+    }
+
+    $(document).ready(function () {
+        var winWidth = $(window).width();
+        navStateChange(winWidth);
         /**
         * Mobile navgation
         */
         $('#nav-toggle').on('click', function (e) {
-            $(this).toggleClass('nav-toggled');
+            $(this).toggleClass('focus');
             $('nav').toggleClass('open');
         });
+    });
+    $(window).resize(function (e) {
+        var winWidth = $(window).width();
+        navStateChange(winWidth);
     });
 })(jQuery);
 jQuery(function () {

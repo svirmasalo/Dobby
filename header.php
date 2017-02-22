@@ -47,15 +47,18 @@
 	</a>
 	<button id="nav-toggle">
 		<span class="screen-reader"><?php _e('Valikko','dobby');?></span>
+		Menu
+<!-- 			<span class="bar"></span>
 		<span class="bar"></span>
-		<span class="bar"></span>
-		<span class="bar"></span>
+		<span class="bar"></span> -->
 	</button>
-	<?php 
-		$navArgs = [
-			'menu_class' => 'menu',
-			'container' => 'nav',
-		];
-		wp_nav_menu($navArgs);
-	?>
+	<nav>
+		<?php 
+			$navArgs = [
+				'menu_class' => 'menu',
+				'container' => '',
+			];
+			wp_nav_menu($navArgs);
+		?>
+	</nav>
 </header>

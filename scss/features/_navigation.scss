@@ -1,66 +1,91 @@
-
-#nav-toggle{
-	padding:0;
+nav{
+	width:100%;
+	position:relative;
+}
+#logo{
+	display:inline-block;
+	position:absolute;
+	top:1rem;
+	left:1rem;
+	height:50px;
 	width:50px;
-	height: 50px;
-	.bar{
-		width:80%;
-		height: 3px;
-		background: black;
-		display: block;
-		margin:3px auto;	
+	img{
+		width: inherit;
+		height:inherit;
 	}
+}
+#nav-toggle{
+  position:absolute;
+  top:1em;
+  right:1em;
+  z-index:11;
 }
 nav{
+  position:absolute;
+  z-index:10;
+  width:100%;
+  top:85.7px;
+  left:0;
+  right:0;
+  transform:rotateX(-90deg);
+  transform-origin:top;
+  &.mobile{
+  transition:all 400ms linear;
+  }  
+  ul{
+    overflow:hidden;
+    padding:0;
+    margin:0;
 
+    
+    list-style:none;
+    min-height:90vh;
 
-	transition: all 248ms linear;
+  }
+  li{
 
-	position:fixed;
-	display:block;
-	overflow:hidden;
-
-	background:darken(#333, 5%);
-
-	top:55px;
-	left:0;
-	right:0;
-	bottom:100%;
-
-	width:100%;
-	height:0;
-
-	z-index:98;
-	
-	
-	&.open{
-		height: 100vh;
-	}
-
-	#menu-paavalikko{
-		display: flex;
-		flex-flow:column;
-		justify-content: center;
-		align-items:flex-start;
-		align-content:center;
-	}
-	.menu-item{
-		display: inline;
-		margin-right:1rem;
-		margin-top:1rem;
-	}
-	.menu-item.menu-item-has-children{
-		ul{
-			display: none;
-		}		
-	}
-
+    box-sizing:border-box;
+    padding:.5em 1em;
+    color:white;
+    display:block;
+    &:hover{
+    }
+    ul{
+    	display: none;
+    }
+  }
 }
-@media screen and (min-width:$navBreakPoint){
-	#nav-toggle{
-		//display: none;
-	}
-	nav{
-		//display: inline-block;
-	}
+nav.open{
+  transform:rotateX(0);
+  ul{
+    
+  }
+}
+@media screen and (min-width: $navBreakPoint){
+  header{
+    #nav-toggle{
+      display:none;
+    }
+    nav{
+      animation:fadeNavIn 248ms 1 forwards;
+      position:absolute;
+      height:auto;
+      width:auto;
+      top: 1em;
+      left: auto;
+      right: 1em;
+      transform:translate(0) rotate(0);
+
+      ul{
+        min-height:auto;
+      }
+      li{
+        display:inline-block;
+      }
+    }
+  }
+}
+@keyframes fadeNavIn{
+  from{opacity:0;};
+  to{opacity:1;};
 }

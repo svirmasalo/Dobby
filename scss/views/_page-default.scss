@@ -10,21 +10,7 @@
 	justify-content: $justify;
 	align-items:center;
 }
-#logo{
-	display:inline-block;
-	width:50px;
-	height:50px;
-	float:left;
-	img{
-		width:inherit;
-		height: auto;
-		line-height: 1;
-		display: block;
-	}
-}
-#nav-toggle{
-	float:right;
-}
+
 header.site-header{
 
 	*{

@@ -27,14 +27,19 @@ $color-pale: #eee;
 		z-index: 99;
 	}
 }
-@mixin relativeNav(){
+@mixin relativeNav($navHeight){
 	header.site-header{
 		position: relative;
 		width:100%;
+		height: $navHeight;
+	}
+	#logo{
+		height: calc($navHeight - .5rem);
+		width: auto;
 	}
 }
-//@include stickyNav(80px);
-@include stickyNav(55px);
+//@include relativeNav(80px);
+@include stickyNav(auto);
 
 /**
 * Breakpoints
