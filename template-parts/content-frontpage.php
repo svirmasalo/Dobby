@@ -7,6 +7,16 @@
 			<?php
 				the_content();
 			?>
+			<?php 
+				// print_r('<pre>');
+				// 	var_dump(get_field('mv_kuva'));
+				// print_r('</pre>');
+			?>
+			<img src="
+			<?php 
+				echo colorizeImage(get_field('mv_kuva'));
+			?>
+			">
 		</div>
 		<footer class="article-footer">
 			

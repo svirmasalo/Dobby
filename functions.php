@@ -157,6 +157,95 @@ ACF MAP STUFF
 Requires ACF plugin
 */
 
+function bgimg($url){
+	return "style=background-image:url('${url}');";
+}
+function colorizeImage($image){
+	/**
+	* Location variables
+	*/
+	$domain = 'http://svirmasalo.dev';
+	$localPath  = $_SERVER['DOCUMENT_ROOT'];
+	$fileNameExtension = '_colorized.';
+	$colorScheme = [255,0,0,1];
+	/**
+	* function expects $url to be either a plain url or 
+	* wordpress image object.
+	*/ 
+	$isArray = is_array($image);
+	if($isArray){
+		$originalUrl = $image["url"];
+	}else{
+		$originalUrl = $image;
+	}
+	/**
+	* Transfer url to local path
+	*/
+	$originalPath = str_replace($domain, $localPath, $originalUrl);
+	$newPath = str_replace('.',$fileNameExtension,$originalPath );
+	$newDomain = str_replace($localPath, $domain, $newPath);
+
+	/**
+	* If the file already exists, I'm not needed
+	*/ 
+	if(file_exists($newPath)){
+		return $newDomain;
+	}
+
+	/**
+	* Check filetype
+	*/ 
+	$fileInfo = new finfo(FILEINFO_MIME);
+	$mimeType = $fileInfo->buffer(file_get_contents($originalPath));
+	$mimeType = explode(';', $mimeType);
+
+	switch ($mimeType[0]) {
+		case 'image/jpeg':
+			$image = imagecreatefromjpeg($originalPath);
+			break;
+		case 'image/png':
+			$image = imagecreatefrompng($originalPath);
+			break;
+		default:
+			echo 'Image hast to be either jpg or png.';
+			break;
+			die;
+	}
+	/**
+	* Turn into grayscale
+	*/
+	if($image && imagefilter($image, IMG_FILTER_GRAYSCALE)){
+		$newImage = str_replace('.', $fileNameExtension, $originalPath);
+		if($mimeType[0] == 'image/jpeg'){
+			imagejpeg($image, $newPath);
+		}else{
+			imagepng($image,$newPath);
+		}
+	}else{
+		exit('Cant convert image to grayscale');
+	}
+	/**
+	* Colorize image
+	*/
+	if($image && imagefilter($image, IMG_FILTER_COLORIZE,$colorScheme[0],$colorScheme[1],$colorScheme[2],$colorScheme[3])){
+		if($mimeType[0] == 'image/jpeg'){
+			imagejpeg($image, $newPath);
+		}else{
+			imagepng($image,$newPath);
+		}	
+	}else{
+		exit('Cant colorize image');
+	}
+	imagedestroy($image);
+	
+	return $newDomain;
+
+}
+
+function makeBtn($url,$class,$desc){
+	return "<a href='${url}' class='btn ${class}'>${desc}</a>";
+}
+
 function my_acf_init() {
 	acf_update_setting('google_api_key', 'YOUR_API_KEY');
 }
